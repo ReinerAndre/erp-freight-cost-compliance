@@ -22,6 +22,7 @@ graph LR
     E -->|Conformidade| G((Integração Aprovada - Contabilidade))
 ```
 🛠️ A Solução Técnica
+
 A solução foi desenvolvida utilizando PL/SQL embarcado no gatilho (trigger) de validação do ERP. As principais abordagens técnicas incluem:
 
 Processamento via Cursos Alinhados (Nested Loops): Identificação de todos os itens de frete ativos e validação exclusiva de suas referências, permitindo tratar N para N (Múltiplos fretes para múltiplas notas).
