@@ -22,12 +22,12 @@ A rotina inspeciona em tempo real:
 
 ## 3. Resolvendo Erros de Execução (Troubleshooting)
 
-### Erro: `ERR-Divergência Contábil: NF-e e CT-e possuem comportamentos opostos...`
+### Erro: `Divergência: NF e CT-e devem ser iguais no estoque (ambos movimentam ou nenhum movimenta). Revise!`
 **Causa:** O usuário está tentando associar um frete que foi lançado em uma conta de despesa (não agrega ao estoque) com uma nota fiscal de entrada de mercadorias para revenda (que movimenta o estoque), ou vice-versa.
 **Como Resolver:**
 1. Verifique a aba de 'Referência' do documento.
 2. Cheque o **CFOP** utilizado na nota da mercadoria. Ele está marcado para compor estoque?
-3. Se a mercadoria é de Consumo (não gera estoque), certifique-se de que o CT-e correspondente também foi lançado em conta de despesa contábil (e não máscara 113x).
+3. Se a mercadoria é de Consumo (não gera estoque), certifique-se de que o CT-e correspondente também foi lançado em conta de despesa contábil (e não máscara 113...).
 4. Corrija a operação divergente e tente integrar novamente.
 
 ## 4. Requisitos para Desenvolvedores (Manutenção)
