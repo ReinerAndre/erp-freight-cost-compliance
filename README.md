@@ -1,9 +1,11 @@
 # Otimização de Conciliação Fiscal: Validação Automática de Custos (CT-e vs NF-e)
 
 📌 O Desafio de Negócio
+
 Na gestão de supply chain e contabilidade corporativa, a alocação imprecisa de custos de frete (CT-e - Modelo 57) sobre notas fiscais de produto (NF-e - Modelo 55) é uma grande dor operacional. Quando um sistema de ERP permite integrar uma nota de produto que movimenta estoque juntamente com um frete configurado para não movimentar (ou vice-versa), os custos logísticos deixam de ser agregados ao custo médio do estoque. Isso gera DREs (Demonstrativos de Resultados) distorcidos, subavaliação do inventário e demanda horas de auditoria manual da equipe fiscal e contábil. 
 
 🎯 O Objetivo
+
 * Garantir 100% de precisão na alocação de custos logísticos dentro do inventário da empresa.
 * Bloquear proativamente a integração de documentos fiscais com configurações contábeis conflitantes (CFOPs, Contas e Cadastros de Itens).
 * Automatizar a validação cruzada entre chaves de acesso referenciadas (CT-e > NF-e).
